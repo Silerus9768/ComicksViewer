@@ -1,4 +1,4 @@
-;;; ComicsViewer.el --- a simple package                     -*- lexical-binding: t; -*-
+;;; ComicsViewer-Customs.el --- a simple package                     -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2020  Nick Sretenskiy
 
@@ -26,8 +26,18 @@
 ;;; Code:
 
 ;; code goes here
-(require 'ComicsViewer-Customs)
-(require 'ComicsViewer-Resize-Functions)
-(ComicsViewer-Load-Customs)
-(provide 'ComicsViewer)
-;;; ComicsViewer.el ends here
+(defun ComicsViewer-Load-Customs ()
+  "Функция загружает настройки по умолчанию"
+  (interactive)
+(defcustom Default-Comics-Viewer-Temp-Dir (substitute-in-file-name "$HOME/.cache/ComicsViewer/")
+  "Директория временных файлов"
+  :group 'Comics-Viewer
+  :type 'directory)
+
+(defcustom Default-Comics-Viewer-Temp-File "ResizedImage.png"
+  "Временный файл"
+  :group 'Comics-Viewer
+  :type 'string))
+
+(provide 'ComicsViewer-Customs)
+;;; ComicsViewer-Customs.el ends here
