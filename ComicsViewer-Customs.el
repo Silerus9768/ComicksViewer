@@ -37,7 +37,14 @@
 (defcustom Default-Comics-Viewer-Temp-File "ResizedImage.png"
   "Временный файл"
   :group 'Comics-Viewer
-  :type 'string))
+  :type 'string)
+(defvar Comics-Viewer-Image-List nil
+  "Список изображений")
+(defvar Comics-Viewer-Current-Image nil
+  "Текущие изображение")
+(defvar Comics-Viewer-Current-Image-Index nil
+  "Индекс текущего изображение")
+)
 
 (provide 'ComicsViewer-Customs)
 ;;; ComicsViewer-Customs.el ends here

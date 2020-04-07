@@ -43,7 +43,7 @@
   (interactive)
   (let ((width (nth 2 (window-body-pixel-edges)))
 	(height (nth 3 (window-body-pixel-edges)))
-	(file-name (buffer-file-name (current-buffer)));;поправить под внешнию переменную
+	(file-name Comics-Viewer-Current-Image);;поправить под внешнию переменную
 	(Temp-Dir (Add-BackSlash Default-Comics-Viewer-Temp-Dir))
 	(Temp-File (concat (Add-BackSlash Default-Comics-Viewer-Temp-Dir) Default-Comics-Viewer-Temp-File)))
     (unless (file-directory-p Default-Comics-Viewer-Temp-Dir)
@@ -59,7 +59,7 @@
   (interactive)
   (let ((width (nth 2 (window-body-pixel-edges)))
 	(height (nth 3 (window-body-pixel-edges)))
-	(file-name (buffer-file-name (current-buffer)));;поправить под внешнию переменную
+	(file-name Comics-Viewer-Current-Image);;поправить под внешнию переменную
 	(Temp-Dir (Add-BackSlash Default-Comics-Viewer-Temp-Dir))
 	(Temp-File (concat (Add-BackSlash Default-Comics-Viewer-Temp-Dir) Default-Comics-Viewer-Temp-File)))
     (unless (file-directory-p Default-Comics-Viewer-Temp-Dir)
@@ -76,7 +76,7 @@
   (interactive)
   (let ((width (nth 2 (window-body-pixel-edges)))
 	(height (nth 3 (window-body-pixel-edges)))
-	(file-name (buffer-file-name (current-buffer)));;поправить под внешнию переменную
+	(file-name Comics-Viewer-Current-Image);;поправить под внешнию переменную
 	(Temp-Dir (Add-BackSlash Default-Comics-Viewer-Temp-Dir))
 	(Temp-File (concat (Add-BackSlash Default-Comics-Viewer-Temp-Dir) Default-Comics-Viewer-Temp-File)))
     (unless (file-directory-p Default-Comics-Viewer-Temp-Dir)
@@ -92,7 +92,7 @@
   (interactive)
   (let ((width (nth 2 (window-body-pixel-edges)))
 	(height (nth 3 (window-body-pixel-edges)))
-	(file-name (buffer-file-name (current-buffer)));;поправить под внешнию переменную
+	(file-name Comics-Viewer-Current-Image);;поправить под внешнию переменную
 	(Temp-Dir (Add-BackSlash Default-Comics-Viewer-Temp-Dir))
 	(Temp-File (concat (Add-BackSlash Default-Comics-Viewer-Temp-Dir) Default-Comics-Viewer-Temp-File)))
     (unless (file-directory-p Default-Comics-Viewer-Temp-Dir)

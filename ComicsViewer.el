@@ -29,5 +29,6 @@
 (require 'ComicsViewer-Customs)
 (require 'ComicsViewer-Resize-Functions)
 (ComicsViewer-Load-Customs)
+(require 'ComicsViewer-List-Functions)
 (provide 'ComicsViewer)
 ;;; ComicsViewer.el ends here
